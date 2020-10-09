@@ -1,0 +1,620 @@
+:root{
+    --mainColor: rgb(7, 190, 7);
+    --subColor:rgb(3, 128, 3);
+    --mainColor: #E41B17;
+    --subColor:#860503; 
+}
+
+body{ padding-top:70px; 
+    overflow: hidden;
+ }
+
+h1,h2,h3,h4,h5,.lead{ font-family: 'Cairo', sans-serif;font-weight: 600; }
+
+a, a:hover{
+    color:#FFF;
+}
+/****************Start Overriding Bootstrap*****************/
+/* Main Navbar */
+.navbar{ min-height:60px; }
+
+
+/* Navbar Link */
+.navbar-inverse .navbar-nav > li > a {
+    color: #BABABA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size:17px;
+    text-align:center;
+}
+
+/* Brand Name */
+.navbar-inverse .navbar-brand {color: #BABABA; font-size: 30px; padding: 20px 15px; }
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color:#333;
+    border-top-width: 3px;
+    border-top-style: solid;
+    min-width:200px;
+}
+
+.navbar-right .dropdown-menu {right: auto; left: 0;}
+
+/* Dropdon Menu Link */
+.dropdown-menu > li > a {
+    padding:6px 20px;
+    color: #FFF;
+    -webkit-transition:padding 0.4s ease;
+    -moz-transition:padding 0.4s ease;
+    -o-transition:padding 0.4s ease;
+    transition:padding 0.4s ease;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{ color:#FFF; padding-left:30px; }
+
+.dropdown-menu > li:last-of-type > a:hover{ padding:6px 10px 6px 30px; }
+
+
+/* btn Menu For Mobile */
+.navbar-toggle { margin-top: 14px; margin-bottom: 11px; }
+/****************  End Overriding Bootstrap  *****************/
+
+
+/***************  Start Section Toolbox   *******************/
+.option-box{
+    position:fixed;
+    top:100px;
+    left:0;
+    z-index:9999;
+}
+
+.option-box .color-option {
+    float:left;
+    background:#333;
+    color:#FFF;
+    padding:10px;
+    width:157px;
+    display:none;
+    opacity: 0.8
+}
+
+.option-box .color-option ul li{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    margin-right:3px;
+    cursor:pointer;
+}
+
+.option-box .gear-check{ padding:5px; cursor:pointer; }
+/***************   End Section Toolbox   *******************/
+
+
+/***************** Start Slide Show Carousel ****************/
+.carousel { top: -10px; }
+
+.carousel-control{ height: 400px;}
+
+.carousel-caption{
+    /* position: relative; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    bottom:70px;
+    width:720px;
+    height:245px;
+    line-height: 1.8;
+    padding-right:20px;
+    padding-left:20px;
+    background-color:rgba(3, 3, 3, .35)
+}
+
+
+
+.corousel-indicators{bottom:0;}
+
+.corousel-indicators p{margin-bottom:35px; width: 565px;}
+
+.carousel-indicators li{height:14px;width:14px;border-color: #DDD;;}
+
+.carousel-indicators .active{height:16px;width:16px;}
+
+.carousel-inner .item img{ width:100%;height:400px;}
+/***************** End Slide Show Carousel ****************/
+
+
+/***************** Start Section About ****************/
+.about{padding-top:60px;padding-bottom:60px;}
+
+.about .lead{color:rgb(88, 88, 88);font-size:25px;margin-top:20px;}
+
+.about h1{font-weight:bold;}
+/***************** End Section About ****************/
+
+
+/****************  Start Section Features  ************/
+.features{background-color:#EEE;padding-top:50px;Padding-bottom:50px;overflow:hidden;}
+
+.features .feat{margin-bottom:30px;}
+
+.features .feat p{line-height:1.8em;}
+
+.features .feat span.glyphicon{font-size:22px;}
+
+.features a {color:#333;}
+/****************  End Section Features  ************/
+
+
+/**************  Start Testimonial Section  **********/
+.testimonials {padding-top:50px; padding-bottom:50px;}
+
+.testimonials h2.h1{ font-weight:bold;}
+
+.testimonials .lead {margin-top:15px; margin-bottom:10px; line-height:2em;}
+
+.testimonials .item span{ font-size:18px; font-weight:bold;}
+
+.testimonials .carousel{min-height:165px;}
+
+.testimonials .carousel-indicators{
+    position:static;
+    width:100%;
+    margin-left:auto;
+    padding-top:20px;
+}
+
+.testimonials .carousel-indicators li{
+    text-indent:0;
+    width:70px;
+    height:70px;
+    opacity:0.3;
+    border:3px solid #FFF;
+    border-radius:50%;
+    overflow:hidden;
+    margin:2px;
+    /* -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+    -o-transition:all 0.4s ease;
+    transition:all 0.4s ease; */
+}
+
+.testimonials .carousel-indicators li.active {
+    width:85px;
+    height:85px;
+    opacity:1;
+    background-color:transparent;
+}
+
+.testimonials .carousel-indicators li img{max-width:100%}
+/**************  Start Testimonial Section  **********/
+
+
+/*************   Start Section Price Table   *********/
+.price_table{background-color:#EEE;padding-top:40px;padding-bottom:40px;
+}
+
+.price_table .row{overflow:hidden}
+
+.price_table .price_box{
+    background-color:#FFF;
+    border:1px solid #DDD;
+    padding:10px;
+    margin-bottom:15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.price_table .price_box h2{margin:5px 0 15px;}
+
+.price_table .price_box:hover p{
+    -webkit-transform: scale(1.2,1.2) rotate(360deg);
+    -moz-transform: scale(1.2,1.2) rotate(360deg);
+    -o-transform: scale(1.2,1.2) rotate(360deg);
+    transform: scale(1.2,1.2) rotate(360deg);
+    border:3px solid #DFDFDF
+}
+
+.price_table .price_box p{
+    font-size:25px;
+    font-weight:bold;
+    color:#666;
+    width:100px;
+    height:100px;
+    background:#F3F3F3;
+    border-radius:50px;
+    line-height:100px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.price_table .price_box ul{line-height:250%;font-size:18px;}
+
+.price_table .price_box a{ margin-bottom:5px;}
+/*************    End Section Price Table    *********/
+
+
+/*************  Start Section Our Team  **************/
+.our_team{
+    background:url("../images/our\ teams\ background2.jpg") no-repeat center center fixed;
+    width:100%;
+    min-height: 600px;
+}
+
+.our_team .person{ margin-bottom:60px;}
+.our_team .team{
+    overflow:hidden;
+    background:rgba(2,2,2,0.8);
+    color:#FFF;
+    min-height:600px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.our_team .team .person img{ border:2px solid rgba(233, 233, 233, 0.801);}
+
+.our_team .team .person p { color:#E6E5E5;}
+
+.our_team .team .person i{ margin:5px}
+
+.our_team .team .person i:hover{ cursor:pointer;}
+/*************   End Section Our Team   **************/
+
+
+/*************  Start Secton Subscribe  **************/
+.subscribe{ padding-top:40px; padding-bottom:70px; background-color:#EEE;}
+
+.subscribe h2.h1{color:#777;letter-spacing:2px; margin-bottom: 30px;
+    font-weight: bold;}
+
+.subscribe p{ margin-bottom:30px;}
+
+.subscribe .form-control{border-radius:0;margin-right:-5px;width:300px;}
+
+.subscribe button{border-radius:0;}
+/*************   Emd Section Subscrobe   *************/
+
+
+/************ Start Section Statistics  ************/
+.statistics{
+    background:url("../images/background-Statictics.jpg") no-repeat center center fixed; 
+    min-height: 400px;
+    overflow:hidden;
+}
+
+.statistics .data {
+    background-color:rgba(2,2,2,0.8);
+    min-height: 400px;
+    color:#B6B5B5;
+    padding-top:50px;
+    padding-bottom:60px;
+}
+
+.statistics .data h2.h1{color:#EFEFEF;}
+
+.statistics .stats{
+    /* -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+    margin-bottom:50px; */
+}
+
+.statistics .stats:hover{ color:#FFF;}
+
+.statistics p{font-size:50px;font-weight:600;margin-bottom:0;}
+
+.statistics span{font-size:18px;}
+/************  End Section Statistics   ***********/
+
+
+/***********  Starat Sction Our Skills  ***********/
+.our-skills{padding-top:40px;padding-bottom:70px;overflow:hidden;}
+
+.our-skills h3 {font-weight:bold;margin-top:0}
+
+.our-skills .progress {height:30px}
+
+.our-skills .progress-bar{
+    line-height:30px;
+    font-size:13px;
+    font-weight:700;
+    text-align:left;
+    text-indent:10px;
+}
+/***********   End Section Our Skills   ************/
+
+
+/**********   Start Section Contact Us   ***********/
+.contact-us{
+    background:url("../images/backgroundLap.jpg") no-repeat center center fixed; 
+    min-height: 400px;
+}
+
+.contact-us .fields{
+    background:rgba(9,9,9,.7);
+    min-height:400px;
+    color:#EFEFEF;
+    padding-top:50px;
+    padding-bottom:60px;
+}
+
+.contact-us p {margin-bottom:40px}
+
+.contact-us textarea {height:108px}
+
+.contact-us input[type="text"],
+.contact-us textarea{ background:rgba(0, 0, 0, 0.7); color:#EEE; border:none;}
+/**********   End Section Contact Us   ************/
+
+
+/**********  Start Section Our Clients  ***********/
+.our-clients{ min-height:100px; padding-top:25px; padding-bottom:25px;}
+
+.our-clients .row{ margin-top: 10px; margin-bottom: 10px;overflow:hidden}
+
+.our-clients li .lay{ width: 126px; overflow:hidden;}
+
+.our-clients .img-responsive{max-width:110%}
+
+.our-clients img{
+    width:90%;
+    opacity:.7;
+    filter:alpha(opacity=70);
+    /* -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out; */
+}
+
+.our-clients img:hover{
+    width:110%;
+    opacity:1;
+    filter:alpha(opacity=100);
+    cursor: pointer;
+}
+/**********   End Section Our Clients   ***********/
+
+
+/********* Start Section Ultimate Footer **********/
+.footer{background-color:#111;color:#AAA;padding-top:10px;   }
+
+.footer a {color:#AAA;}
+
+.footer a:hover {color:#FFF;}
+
+.footer h3 { letter-spacing:1px; margin:30px 0 20px;}
+
+.footer .three-columns{ overflow:hidden;}
+
+.footer .three-columns li{width:33.3333%; float:left; padding:10px 0;}
+
+.social-list{ overflow:hidden; padding:5px 0; width:100%}
+
+.social-list li{
+    padding-left:15px;
+    float:left;
+    margin-top:15px;
+    margin-right:0px;
+    opacity:.65;
+    filter:alpha(opacity=650);
+    /* -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out; */
+}
+
+.social-list li:hover{ opacity:1; filter:alpha(opacity=100); cursor: pointer;}
+
+.social-list li img{
+    padding: .13%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.social-list li:nth-child(1) img{border: 2px solid #4e598f;}
+.social-list li:nth-child(2) img{border: 2px solid #cf4c3c;}
+.social-list li:nth-child(3) img{border: 2px solid #862328;}
+.social-list li:nth-child(4) img{border: 2px solid #7ad768;}
+.social-list li:nth-child(5) img{border: 2px solid #65a2d9;}
+.social-list li:nth-child(6) img{border: 2px solid #d22215;}
+
+.footer .img-thumbnail{
+    background:rgba(0,0,0,.3);
+    border:1px solid #444;
+    margin-bottom:5px;
+    float:left;  
+}
+
+.footer .copyright{
+    background-color:#333;
+    color:#AAA;
+    padding:15px 0;
+    margin-top:30px;
+    font-size:18px;
+}
+
+.cen{text-align:center;}
+/*********  Emd Section Ultimate Footer  **********/
+
+
+/********  Start Section Loading  ************/
+.loading-overlay{
+    background-color:#222;
+    color:#FFF;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:5120px;
+    z-index:999999;
+}
+
+/* .loading-overlay h2.h1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+/********   End Section Loading   ************/
+
+
+/********  Start Spinner Lodding *********/
+.sk-cube-grid {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #FEFEFE;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+/*******   End Spinner Lodding  *********/
+
+
+/*********  Start Scroll Top  **********/
+#scroll-top{
+    width:35px;
+    height:30px;
+    color:#DDD;
+    background-color:var(--mainColor);
+    opacity:.75;
+    text-align:center;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:999;
+    border-radius:5px;
+    cursor:pointer;
+    display:none;
+}
+
+#scroll-top:hover{ opacity:1;}
+/*********   End Scroll Top   **********/
+
+/********  Start Our Grouping System  *********/
+.our_team,.statistics,.contact-us {
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+.our_team h2.h1,.our-skills h2.h1 ,.statistics
+.data h2.h1,.corousel-indicators h2.h1,.price_table h2.h1,
+.features h2.h1 , .about h1 ,.testimonials h2.h1
+{ margin-bottom:50px; font-weight:bold;}
+
+.testimonials .carousel-indicators li,
+.statistics .stats, .statistics .stats{
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+/********  End Our Grouping System  *********/
+
+
+/*******  Start Retouch 2media   ***********/
+
+@media (max-width:767px){
+    .navbar-inverse .navbar-nav > li > a{
+        padding-top:10px; padding-bottom:10px; text-align: center;}
+    .subscribe .form-control{margin:10px auto;width:200px;}
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {max-height: none;}
+    .testimonials .carousel-indicators li{width:50px;height:50px;margin:0;}
+    .testimonials .carousel-indicators li.active{width:60px;height:60px;margin:0;}
+    .work-list .cen {padding-left: 18%;
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .footer ul.work-list{margin-left:5%;}
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .footer ul.work-list{margin-left:15%;}
+}
+
+@media (min-width:1200px){
+}
+
+/** custom **/
+@media (min-width: 520px) and (max-width:991px){
+    .our-clients li .lay{margin-bottom:10px;}
+    .our-clients img{ width:100%;}
+    .our-clients img:hover{width:100%}
+}
+
+@media (max-width:519px){.our-clients{padding:10px 2% 10px 6%;}
+    .our-clients li{padding-left:5px;padding-right:5px; 
+                    width:46%;margin-left: 10px;margin-top: 10px;}
+    .our-clients img{width:100%;}
+    .our-clients img:hover{width:100%}  
+}
+
+/* @media (min-width:100px){#responsive_headline{min-width:10px;max-width:100px}} */
+/*******  End Retouch2 media   ***********/
+

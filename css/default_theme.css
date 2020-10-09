@@ -1,0 +1,49 @@
+:root{
+    --mainColor: #E41B17;
+    --subColor:#8f0b09; 
+    /* --footColor::#0895d1; */
+}
+/************  Start Defualt theme  *************/
+/*** Active Link ***/
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.option-box .gear-check,
+.carousel-indicators .active,
+#scroll-top{
+    background-color:var(--mainColor);
+}
+
+.navbar-brand span,
+.about h1 span,
+.testimonials .item span,
+.our_team .team .person i:hover{
+    color:var(--mainColor);
+}
+
+.option-box .color-option,
+.testimonials .carousel-indicators li.active{
+    border:3px solid var(--mainColor);
+}
+
+.dropdown-menu {
+    border-top-color: var(--subColor);
+}
+
+/* Divider */
+.dropdown-menu .divider {
+    background-color:var(--subColor);
+}
+
+.footer h3 {
+    /* color:#0895d1; */
+    color:var(--subColor);
+}
+
+.footer .copyright span{
+    /* color:#0895d1; */
+    color:var(--subColor);
+}
+/************  End Defualt theme  *************/
